@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Dating Web Site Assessment</title>
+		<meta charset="utf-8">
+		<meta name="author" content="Abdullah Alam">
+	</head>
+	<body>
+		<!-- Web page content without style -->
+		<h1>Please Enter Your Details For Our Dating Website!</h1>
+		<form method="post" enctype="multipart/form-data" action="https://ihome.ust.hk/~rossiter/cgi-bin/show_everything.php">
+			<fieldset>
+				<legend>Your Face</legend>
+				<label for="avatar">Your image:</label>
+				<input type="file" id="avatar" name="avatar" required>
+				<br>
+				<label for="preview">Image preview:</label>
+				<img id="preview">
+			</fieldset>
+			<br>
+			<fieldset>
+				<legend>Your General Details</legend>
+					<label for="name">Name:</label>
+					<input type="text" name="name" placeholder="Your full name" required>
+					<br>
+					<label for="gender">Gender:</label> 
+					<input type="radio" name="gender" value="male" required>
+					<label for="male">Male</label> 
+					<input type="radio" name="gender" value="female" required>
+					<label for="female">Female</label>
+					<br>
+					<label for="age">Age:</label>
+					<input type="number" min="0" max="99" step="1" value="18" name="age" required>
+					<br>
+					<label for="birthday">Date of birth:</label>
+					<input type="date" name="birthday">
+					<br>
+					<label for="color">Favorite color:</label>
+					<input type="color" name="color">
+					<br>
+					<label for="country">Which country:</label>
+					<select name="countries">
+						<option disabled selected></option>
+						<option value="aus">Australia</option>
+						<option value="bd">Bangladesh</option>
+						<option value="colombia">Colombia</option>
+						<option value="uk">United Kingdom</option>
+						<option value="usa">United States of America</option>
+					</select>
+			</fieldset>
+			<br>
+			<fieldset>
+				<legend>Your Indicators</legend>
+				<label for="height">Height:</label>
+				<label for="short">Short</label>
+				<input type="range" min="0" max="100" step="5" value="50" name="height">
+				<label for="tall">Tall</label>
+				<br>
+				<label for="salary">Salary:</label>
+				<label for="poor">Poor</label>
+				<input type="range" min="0" max="100" step="5" value="50" name="salary">
+				<label for="rich">Rich</label>
+			</fieldset>
+			<br>
+			<fieldset>
+				<legend>Your Contact Information</legend>
+					<label for="email">Email:</label>
+					<input type="email" name="email" required>
+					<br>
+					<label for="mobile">Mobile:</label>
+					<input type="tel" name="mobile">
+					<br>
+					<label for="address">Address</label>
+					<textarea rows="3" cols="25" name="address">		
+					</textarea>
+					<br>
+					<label for="method">Method to contact you</label>
+					<input type="checkbox" name="contact" value="email">
+					<label for="email">Email</label>
+					<input type="checkbox" name="contact" value="whatsapp">
+					<label for="whatsapp">Whatsapp</label>
+					<input type="checkbox" name="contact" value="in-app">
+					<label for="in-app">In-app chat</label>
+			</fieldset>
+			<br>
+			<input type="submit" value="Submit!">
+		</form>
+	</body>
+</html>
